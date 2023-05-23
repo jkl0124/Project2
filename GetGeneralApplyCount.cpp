@@ -1,10 +1,6 @@
-#include "GetGeneralApplyConut.h"
-void GetGeneralApplyCount::run()
-{
-	getApplyCount();
-}
+#include "GetGeneralApplyCount.h"
 
-void GetGeneralApplyCount::getApplyCount()
+string GetGeneralApplyCount::getApplyCount(GeneralMember* Mem)
 {
-	GeneralMember::getApplyNum();
+	return Mem.getApplyNum();
 }

@@ -1,14 +1,8 @@
+#include "FIndApply.h"
 #include <string>
-#include "FindApply.h"
 using namespace std;
 
-void FindApply::run()
+string FindApply::showMyApplys(GeneralMember* Mem)
 {
-	showMyApplys();
-	cout << endl;
-}
-
-void FindApply::showMyApplys()
-{
-	GeneralMember::listApplys();
+	return Mem.listApplys();
 }
